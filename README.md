@@ -1,58 +1,47 @@
-# Titanic Survival Prediction Project
+Titanic - Machine Learning from Disaster
+Project Overview
+This project aims to predict the survival of passengers on the Titanic using various machine learning techniques. I have followed a complete end-to-end Machine Learning pipeline, from initial data exploration to training and evaluating different models. This project demonstrates my ability to handle a real-world classification problem.
 
----
+Skills and Techniques Demonstrated
+This repository is a testament to my proficiency in key data science and machine learning concepts:
 
-## **Projeck ki Jankari (Project Overview)**
+1. Data Preprocessing & Cleaning
+Missing Values: Handled missing data in the dataset, particularly in the Age and Embarked columns, using appropriate imputation techniques.
 
-Is project ka maqsad **Titanic disaster** ke data ka istemal kar ke yeh predict karna hai ke kaun se musafir (passengers) zinda bache (survived) aur kaun nahi. Maine is mushkil problem ko solve karne ke liye Machine Learning ke concepts aur techniques ka end-to-end (shuru se aakhir tak) istemal kiya hai.
+Categorical Data Handling: Converted non-numeric, text-based data (e.g., Sex, Embarked) into a numerical format suitable for machine learning models using One-Hot Encoding.
 
-Is project ke zariye, maine ek **classification model** banaya hai jo musafiron ke alag-alag features (jaise ke umar, gender, ticket class, waghaira) par depend karta hai.
+2. Feature Engineering
+I created new, more informative features from the existing data to improve model performance:
 
----
+Family_Size: A new feature to determine if a passenger was traveling alone or with their family.
 
-## **Seekhi Hui Techniques aur Maharat (Skills Demonstrated)**
+Title: Extracted titles from passenger names to identify their social status, which is a strong predictor of survival.
 
-Yeh project dikhata hai ke mujhe in Machine Learning techniques par acchi maharat hai:
+3. Model Training & Evaluation
+I trained and evaluated two classification models to compare their performance:
 
-### **1. Data Preprocessing & Cleaning**
-* **Missing Values:** Maine data mein maujood khaali values (missing values) ko samajhdaari se deal kiya hai. Jaise ke, `Age` aur `Embarked` columns mein missing values ko sahi tareeqe se bhara.
-* **Categorical Data Handling:** Text-based data (jaise ke `Sex`, `Embarked`) ko machine learning models ke liye taiyaar kiya, jiske liye maine **One-Hot Encoding** jaisi techniques ka istemal kiya.
+Logistic Regression
 
-### **2. Feature Engineering**
-* Maine maujood data se naye aur zyada informational features banaye hain.
-    * **`Family_Size`:** Is feature se pata chalta hai ke musafir akela safar kar raha tha ya apne parivar ke saath.
-    * **`Title`:** Musafir ke naam se unka title nikaal kar ek naya feature banaya, jisse unki social status ka pata chalta hai.
+Random Forest
 
-### **3. Model Training**
-* Maine do alag-alag classification models ko train kiya hai taaki unki performance ka muqabla (comparison) kiya ja sake:
-    * **Logistic Regression**
-    * **Random Forest**
+To thoroughly assess the models, I used multiple performance metrics beyond simple accuracy, including Precision, Recall, and F1-Score. The Random Forest model was chosen as the final model due to its superior performance across these metrics.
 
-### **4. Model Evaluation & Comparison**
-* Sirf accuracy par depend karne ke bajaye, maine models ki performance ko aur bhi zaroori metrics se jaancha hai, jisse unki asli taqat ka pata chalta hai:
-    * **Accuracy Score**
-    * **Precision**
-    * **Recall**
-    * **F1-Score**
-* Analysis ke baad, **Random Forest** model ne sabse behtar performance di, jisse yeh mera final model ban gaya.
+Repository Structure
+Titanic - Machine Learning from Disaster.ipynb: The main Jupyter Notebook containing all the code for data analysis, cleaning, feature engineering, model training, and evaluation.
 
----
+train.csv: The primary dataset used for training the model.
 
-## **Repository Structure**
-* `Titanic - Machine Learning from Disaster.ipynb`: Is Jupyter Notebook file mein poora code hai jismein data analysis, cleaning, feature engineering, model training, aur evaluation shamil hai.
-* `train.csv`: Kaggle se liya gaya training data.
-* `test.csv`: Kaggle se liya gaya test data (is project mein abhi tak predictions nahi kiye gaye hain).
+test.csv: The test dataset from Kaggle, for which predictions can be generated.
 
----
+Technologies Used
+Python
 
-## **Istemal Ki Gayi Libraries (Technologies Used)**
-* `Python`
-* `Pandas`
-* `Numpy`
-* `Scikit-learn`
-* `Matplotlib`
-* `Seaborn`
+Pandas
 
----
+Numpy
 
-**Agar aapko is project ke baare mein koi aur jankari chahiye ya koi sawal hai, to aap mujhse zaroor contact kar sakte hain.**
+Scikit-learn
+
+Matplotlib
+
+Seaborn
