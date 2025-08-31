@@ -1,4 +1,4 @@
-Titanic - Machine Learning from Disaster
+# Titanic - Machine Learning from Disaster
 Project Overview
 This project aims to predict the survival of passengers on the Titanic using various machine learning techniques. I have followed a complete end-to-end Machine Learning pipeline, from initial data exploration to training and evaluating different models. This project demonstrates my ability to handle a real-world classification problem.
 
